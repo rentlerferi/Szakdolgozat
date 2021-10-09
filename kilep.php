@@ -5,3 +5,5 @@
 	mysqli_close($conn);
 	header("Location:?oldal=main");
 ?>
+
+<?>
