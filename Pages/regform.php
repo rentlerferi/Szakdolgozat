@@ -8,10 +8,10 @@
             <i class="icon"></i>
             <input class="input-field" type="text" placeholder="Név" name="name">
         </div>
-            <h3>Becenév:</h3>
+            <h3>Emailcím:</h3>
             <div class="input-container">
                 <i class="icon"></i>
-                <input class="input-field" type="text" placeholder="Bencenév" name="nick">
+                <input class="input-field" type="text" placeholder="E-mail" name="mail">
             </div>
 
             <h3>Neptun kód:</h3>
@@ -27,19 +27,14 @@
             </div>
             <h3>Jelszó megerősítése:</h3>
             <div class="input-container">
-
                 <i class="icon"></i>
-
                 <input class="input-field" type="password" placeholder="Jelszó megerősítése" name="pswag">
             </div>
 
             <button type="submit" class="bttn" name="reg">Regisztráció</button>
         </form>
-
 </body>
-
 </html>
-
 <?php
 	include "connection.php";
 	if(isset($_POST["reg"]))

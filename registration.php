@@ -1,6 +1,6 @@
 <?php
     $nev = $_POST['name'];
-    $becenev = $_POST['nick'];
+	$email = $_POST['mail'];
     $neptun = $_POST['neptun'];
     $jelszo = $_POST['psw'];
 	$jelszo2 = $_POST['pswag'];
@@ -26,7 +26,7 @@
 	else if($kodhossz != 6)
 		print "<div class='not'>A neptunkód nem megfelelő! </div>";
 	else if($jelszo != $jelszo2)
-		print "<div class='not'>A két jelszó nem egyezik! </div>";
+		print "<div class='not'>A jelszavak nem egyeznek! </div>";
 	else if($vane > 0)
 		print "<div class='not'>Ez a felhasználó már létezik! </div>";
 	else if($jelszohossz<8 || $jelszohossz>16)
