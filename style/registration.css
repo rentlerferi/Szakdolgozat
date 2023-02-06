@@ -1,0 +1,46 @@
+ /*registration*/
+
+ .input-container {
+    display: -ms-flexbox; 
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .icon {
+    padding: 10px;
+    background: rgb(0, 0, 0);
+    color: white;
+    min-width: 50px;
+    text-align: center;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+  }
+  
+  .input-field:focus {
+    border: 2px solid dodgerblue;
+  }
+  
+  .registration{
+    position: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 4%;
+  
+  }
+  .bttn {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 1;
+  }
+  
+  .regbttn:hover {
+    opacity: 1;
+  }
