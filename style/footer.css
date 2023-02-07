@@ -18,15 +18,13 @@ footer{
     margin-left: 0.5%;
 }
 .social{
-    display: flex;
+    display: inline-block;
     top: 40%;
     left: 50%;
-    translate: (-50%, -50%);
+    transform: translate(-50%,-50%);
     transform: translateX(-50%) translateY(-50%);
     position: absolute;
-    align-items: center;
-    justify-content: center;
-    
+    text-align: center;
 }
 
 .social ul{
@@ -44,10 +42,7 @@ footer{
     line-height: 45px;
     color: #000;
     background-color: white;
-    display: inline-block;
     transition: 0.3s;
-    align-items: center;
-    justify-content: center;
 
 }
 

@@ -29,7 +29,7 @@
 			{
 				print
 				'<li><a href="index.php?oldal=callendar">Órarend</a></li>
-        <li><a href="index.php?oldal=profile">Profil</a></li>
+        		<li><a href="index.php?oldal=profile">Profil</a></li>
 				<li><a href="index.php?oldal=kilep">Kilépés</a></li>';
 			}
 		?>

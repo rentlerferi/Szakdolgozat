@@ -1,44 +1,61 @@
 <html>
+<head>
+    <meta name="viewport" content ="width  = device-width, initial-scale=1.0">
+</head>
 <body>
-    <h1>Regisztráció</h1>
-    </br>
-    <form class="registration" method="POST">
-        <h3>Név:</h3>
-        <div class="input-container">
-            <i class="icon"></i>
-            <input class="input-field" type="text" placeholder="Név" name="name">
+<div class="container">
+    <div class="signup-box">
+        <div class="col-1">
+            <img  src="../Images/registration.jpg">
         </div>
-            <h3>Emailcím:</h3>
-            <div class="input-container">
-                <i class="icon"></i>
-                <input class="input-field" type="text" placeholder="E-mail" name="mail">
-            </div>
+        <div class="col-2">
+            <h2>Regisztrálj te is!</h2>
+            <span>Van már fiókod? <a href="#">Bejelentkezés</a></span>
+            <a href="" class="google-link">
+                <img src="../Images/google.png"> Bejelentkezés Googlelal
+            </a>
+                <h4>vagy</h4>
 
-            <h3>Neptun kód:</h3>
-            <div class="input-container">
-                <i class="icon"></i>
-                <input class="input-field" type="text" placeholder="Neptun kód" name="neptun">
-            </div>
-            <h3>Jelszó:</h3>
-            <div class="input-container">
+                <form class="registration" method="POST">
 
-                <i class="icon"></i>
-                <input class="input-field" type="password" placeholder="Jelszó" name="psw">
-            </div>
-            <h3>Jelszó megerősítése:</h3>
-            <div class="input-container">
-                <i class="icon"></i>
-                <input class="input-field" type="password" placeholder="Jelszó megerősítése" name="pswag">
-            </div>
+                    <label>Név:</label>
+            
+                    <input class="input-field" type="text" placeholder="Név" name="name">
 
-            <button type="submit" class="bttn" name="reg">Regisztráció</button>
-        </form>
+                    <label>Emailcím:</label>
+
+                        <input class="input-field" type="text" placeholder="E-mail" name="mail">
+
+
+                    <label>Neptun kód:</label>
+
+                        <input class="input-field" type="text" placeholder="Neptun kód" name="neptun">
+
+                    <label>Jelszó:</label>
+
+                        <input class="input-field" type="password" placeholder="Jelszó" name="psw">
+
+                    <label>Jelszó megerősítése:</label>
+        
+                        <input class="input-field" type="password" placeholder="Jelszó megerősítése" name="pswag">
+
+
+
+                    <div class="row">
+                        <input type="checkbox" checked> 
+                        <span>Elfogadom a <a href="#">Felhasználási Feltételeket és az Adatkezelési Tájékoztatót.</a></span>
+
+                    </div>
+                    <button  type="submit"  name="reg">Regisztráció</button>
+                </form>
+                    <?php
+                        include "connection.php";
+                        if(isset($_POST["reg"]))
+                        {
+                            include_once("registration.php");
+                        }
+                    ?>
+        </div>
+</div>
 </body>
 </html>
-<?php
-	include "connection.php";
-	if(isset($_POST["reg"]))
-	{
-		include_once("registration.php");
-	}
-?>

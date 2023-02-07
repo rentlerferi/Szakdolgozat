@@ -1,46 +1,110 @@
  /*registration*/
+/*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}*/
 
- .input-container {
-    display: -ms-flexbox; 
-    display: flex;
-    width: 100%;
-    margin-bottom: 15px;
-  }
-  .icon {
-    padding: 10px;
-    background: rgb(0, 0, 0);
-    color: white;
-    min-width: 50px;
-    text-align: center;
-  }
+.container{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, transparent, #009688 ) ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+}
+.signup-box{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex: wrap;
+}
+.col-1, .col-2{
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+.col-1, .regimg{
+  width: 100%;
+  display: block;
+
+}
+.col-2{
+  background: #fff;
+  padding: 40px 8%;
+  color: #333;
+  min-height: 250px;
+}
+.col-2, h2,{
+ font-weight: 600;
+}
+.col-2 span{
+  font-size: 12px;
+  padding-top: 2%;
   
-  .input-field {
-    width: 100%;
-    padding: 10px;
-    outline: none;
-  }
-  
-  .input-field:focus {
-    border: 2px solid dodgerblue;
-  }
-  
-  .registration{
-    position: center;
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 4%;
-  
-  }
-  .bttn {
-    background-color: rgb(0, 0, 0);
-    color: white;
-    padding: 15px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 1;
-  }
-  
-  .regbttn:hover {
-    opacity: 1;
-  }
+}
+.col-2 span a{
+  text-decoration: none;
+  color: #ef005d;
+  font-weight: 500;
+  justify-content: center;
+}
+.google-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ef005d;
+  text-decoration: none;
+  color: #555;
+  font-size: 13px;
+  margin: 20px 0;
+
+}
+.google-link img{
+  width: 50px;
+  margin-right: 1%;
+
+}
+.col-2 h4{
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.input-field{
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ef005d;
+  outline: none;
+  display: block;
+  width: 100%;
+  margin: 5px 0 10px;
+
+}
+.registration label, .loglabel{
+  font-weight: 500;
+  font-size: 12px;
+
+}
+.row {
+  display: flex;
+  align-items: center;
+}
+.row input{
+  margin-right: 6px;
+}
+.col-2 form button, .reg-logbttn{
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ef005d;
+  outline: none;
+  display: block;
+  width: 100%;
+  margin: 18px 0 10px;
+  background: #ef005d;
+  color: #fff;
+  cursor: pointer;
+}
