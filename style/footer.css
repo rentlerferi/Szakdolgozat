@@ -1,9 +1,10 @@
-*{
+* {
     box-sizing: border-box;
 }
-footer{
+
+footer {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #333 ;
+    background-color: #333;
     color: white;
     text-align: left;
     bottom: 0;
@@ -11,42 +12,46 @@ footer{
     width: 100%;
     z-index: 1;
     height: 8%;
-  
+
 }
-.cofee{
+
+.cofee {
     float: right;
     margin-left: 0.5%;
 }
-.social{
+
+.social {
     display: inline-block;
     top: 40%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    transform: translateX(-50%) translateY(-50%);
+    transform: translate(-50%, -50%);
     position: absolute;
     text-align: center;
 }
 
-.social ul{
+.social ul {
     list-style: none;
-  
+
 }
 
-.social ul li{
+.social ul li {
     display: inline-block;
 }
 
-.social ul li a{
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
+.social ul li a {
+    
     color: #000;
-    background-color: white;
+    background-color: #fff;
     transition: 0.3s;
+    min-width: 80px;
+    min-height: 80px;
+    line-height: 80px;
+    border: 2px solid white;
 
 }
 
-.social ul li a:hover{
-    color:#fff;
+.social ul li a:hover {
+    color: #fff;
     background-color: #552382;
+    
 }
