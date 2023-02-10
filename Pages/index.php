@@ -16,6 +16,7 @@
 
 	<script src="../javascript/slideshow.js"></script>
 	<script src="../javascript/maps.js"></script>
+	<script src="../javascript/gallery.js"></script>
 
 </head>
 <header>

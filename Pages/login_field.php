@@ -1,7 +1,8 @@
 <html>
 
 <body>
-    <div >
+
+    <div class="login-box">
         <h2>Belépés</h2>
         <form class="registration" method="POST">
             <label class="loglabel">Neptunkód:</label>
@@ -19,6 +20,8 @@
         }
         ?>
     </div>
+
+
 </body>
 
 </html>

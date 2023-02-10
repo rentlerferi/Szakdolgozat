@@ -1,28 +1,122 @@
+.display {
+  width: 100%;
+  height: auto;
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  flex: wrap;
+}
 
-  
-  iframe {
-    align-items: center;
-    width: 100%;
-    height: 250;
-    padding: 10px;
-    border: 0;
-  
-  
+.first-row,
+.second-row {
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+
+.first-row image {
+  width: 100%;
+  display: block;
+  height: auto;
+  border: 1px solid white;
+  padding: 0;
+  margin: 0;
+
+}
+
+iframe {
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  padding: 10px;
+  border: 0;
+
+
+}
+
+.description {
+  text-align: justify;
+  size: 16px;
+  font-weight: 350;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 30px;
+  color: white;
+  width: 100%;
+  background-color: #333;
+  padding-left: 30px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  width: 100%;
+  background-color: #646363;
+  padding-left: 30px;
+}
+
+p {
+  font-weight: 400;
+  text-align: justify;
+  padding-left: 40px;
+  padding-right: 30px;
+}
+.display .first-row img{
+height: 500px;
+width: auto;
+
+}
+
+/*Gallery*/
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.gallery {
+  display: flex;
+  margin: 10px auto;
+  max-width: 600px;
+  position: relative;
+  padding-top: 400px/600px * 100%;
+
+  @media screen and (min-width: 600px) {
+    padding-top: 400px;
   }
-  
-  /*nevezetességek*/
-  .nevezetessegek {
-    text-align: center;
-  }
-  
-  .not {
-    margin-left: 12.5%;
-    margin-top: 3%;
-    padding: 1.5%;
-    font-family: 'Times New Roman';
-    color: white;
-    border: 5px solid rgb(223, 255, 255);
-    width: 75%;
-    text-align: center;
-    font-size: 35px;
-  }
+}
+
+.gallery__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.gallery__thumb {
+  padding-top: 6px;
+  margin: 6px;
+  display: block;
+}
+
+.gallery__selector {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+
+}
+
+.gallery__selector:checked .gallery__img {
+  opacity: 1;
+}
+
+.gallery__img .gallery__thumb>img {
+  box-shadow: 0 0 0 3px #0be2f6;
+  ;
+}

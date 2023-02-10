@@ -1,4 +1,5 @@
 <html>
+<h2>Üdvözlünk a United Unies weboldalán!</h2>
 <div class="slideshow-container">
 
     <!-- Full-width images with number and caption text -->
@@ -33,7 +34,7 @@
     </div>
 
 
-    <h1>Üdvözlünk a United Unies weboldalán!</h1>
+    
 
     <p>Amikor bekerül valaki az egyetemre, egy csomó idegen emberrel, épülettel és kifejezéssel találkozik mindenki.
         Ha csinálnánk egy közvéleménykutatást az első napokban hogy ki tudja melyik az A01-es terem, nagy összeget
