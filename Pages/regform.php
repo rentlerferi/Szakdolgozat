@@ -5,12 +5,13 @@
 </head>
 
 <body>
+   
     <div class="container">
-        <div class="signup-box">
-            <div class="col-1">
+        <div class="signup-box row">
+            <div class="col-lg-6">
                 <img src="../Images/registration.jpg">
             </div>
-            <div class="col-2">
+            <div class="col-2 col-lg-6 radius-2">
                 <h2>Regisztrálj te is!</h2>
                 <span>Van már fiókod? <a href="index.php?oldal=login_field">Bejelentkezés</a></span>
                 <a href="" class="google-link">
@@ -20,14 +21,17 @@
 
                 <form class="registration" method="POST">
 
-                    <label>Név:</label>
+                    <label>Vezetéknév</label>
 
-                    <input class="input-field" type="text" placeholder="Név" name="name">
+                    <input class="input-field" type="text" placeholder="Vezetéknév" name="firstname" required oninvalid="this.setCustomValidity('Kurva anyád')"  >
+
+                    <label>Keresztnév</label>
+
+                    <input class="input-field" type="text" placeholder="Kersztnév" name="lastname" required>
 
                     <label>Emailcím:</label>
 
-                    <input class="input-field" type="text" placeholder="E-mail" name="mail">
-
+                    <input class="input-field" type="text" placeholder="E-mail" name="mail" required>
 
                     <label>Neptun kód:</label>
 
@@ -43,7 +47,7 @@
 
 
 
-                    <div class="row">
+                    <div class="row2">
                         <input type="checkbox" checked> <span>Elfogadom a <a href="#">Felhasználási Feltételeket és az
                                 Adatkezelési Tájékoztatót.</a></span>
 
@@ -52,9 +56,9 @@
                     <button type="submit" name="reg">Regisztráció</button>
                 </form>
                 <?php
-                include "connection.php";
+                include "../connections/connection.php";
                 if (isset($_POST["reg"])) {
-                    include_once("registration.php");
+                    include_once("../connections/registration.php");
                 }
                 ?>
             </div>
