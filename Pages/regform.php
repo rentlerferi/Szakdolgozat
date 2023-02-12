@@ -5,12 +5,9 @@
 </head>
 
 <body>
-   
-    <div class="container">
-        <div class="signup-box row">
-            <div class="col-lg-6">
-                <img src="../Images/registration.jpg">
-            </div>
+
+    <div class="regform">
+        <div class="signup-box">
             <div class="col-2 col-lg-6 radius-2">
                 <h2>Regisztrálj te is!</h2>
                 <span>Van már fiókod? <a href="index.php?oldal=login_field">Bejelentkezés</a></span>
@@ -23,35 +20,45 @@
 
                     <label>Vezetéknév</label>
 
-                    <input class="input-field" type="text" placeholder="Vezetéknév" name="firstname" required oninvalid="this.setCustomValidity('Kurva anyád')"  >
+                    <input class="input-field" type="text" placeholder="Vezetéknév" name="firstname" pattern="[A-Za-z]"
+                        required oninvalid="this.setCustomValidity('Vezétéknéknév megadása kötelező')">
 
                     <label>Keresztnév</label>
 
-                    <input class="input-field" type="text" placeholder="Kersztnév" name="lastname" required>
+                    <input class="input-field" type="text" placeholder="Kersztnév" name="lastname" pattern="[A-Za-z]"
+                        required oninvalid="this.setCustomValidity('Keresztnév megadása kötelező')">
 
                     <label>Emailcím:</label>
 
-                    <input class="input-field" type="text" placeholder="E-mail" name="mail" required>
+                    <input class="input-field" type="text" placeholder="E-mail" name="mail"
+                        attern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required
+                        oninvalid="this.setCustomValidity('E-mail megadása kötelező')">
 
                     <label>Neptun kód:</label>
 
-                    <input class="input-field" type="text" placeholder="Neptun kód" name="neptun">
+                    <input class="input-field" type="text" placeholder="Neptun kód" name="neptun"
+                        pattern="[A-Za-z0-9]{1,20}" required
+                        oninvalid="this.setCustomValidity('Neptunkód megadása kötelező')">
 
                     <label>Jelszó:</label>
 
-                    <input class="input-field" type="password" placeholder="Jelszó" name="psw">
+                    <input class="input-field" type="password" placeholder="Jelszó"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="psw" pattern="[A-Za-z0-9]{1,20}" required
+                        oninvalid="this.setCustomValidity('Tartalmazina kell legalább 1 számot kis és nagybetüt és legalább 8 krakternek kell lennie')">
 
                     <label>Jelszó megerősítése:</label>
 
-                    <input class="input-field" type="password" placeholder="Jelszó megerősítése" name="pswag">
+                    <input class="input-field" type="password" placeholder="Jelszó megerősítése"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="pswag" pattern="[A-Za-z0-9]{1,20}" required
+                        oninvalid="this.setCustomValidity('Jelszó megadása kötelező')">
 
 
 
                     <div class="row2">
-                        <input type="checkbox" checked> <span>Elfogadom a <a href="#">Felhasználási Feltételeket és az
+                        <input type="checkbox" required
+                            oninvalid="this.setCustomValidity('Felhasználói és adatkezelési tájékoztató elfogadása kötelező')">
+                        <span>Elfogadom a <a href="#">Felhasználási Feltételeket és az
                                 Adatkezelési Tájékoztatót.</a></span>
-
-
                     </div>
                     <button type="submit" name="reg">Regisztráció</button>
                 </form>

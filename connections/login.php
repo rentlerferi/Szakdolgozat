@@ -5,9 +5,8 @@
 		$titkositott = md5($pw);
 		$ncfel = strtoupper($nc);
 		
-		$sql = mysqli_query($conn, "SELECT * FROM felhasznalok WHERE neptunkod = '$ncfel' AND jelszo = '$titkositott'");
-		$becenev = mysqli_query($conn, "SELECT becenev FROM felhasznalok WHERE neptunkod = '$ncfel' AND jelszo = '$titkositott'");
-		$vane = mysqli_num_rows($sql);
+		$sql = $conn->query("SELECT * FROM registered_users WHERE neptun LIKE '$nc' && password like '$ncfel'"); 
+		$vane = $sql->num_rows;
 		
 		//ellenörzés
 	

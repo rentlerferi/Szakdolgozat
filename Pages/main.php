@@ -33,36 +33,6 @@
     })
 </script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="description">
 
     <p>Amikor bekerül valaki az egyetemre, egy csomó idegen emberrel, épülettel és kifejezéssel találkozik mindenki.
@@ -139,11 +109,6 @@
 
 
 </div>
-
-
-
-
-
 
 
 </html>

@@ -1,7 +1,7 @@
 <html>
 
 <body>
-    <div class="container">
+    <div class="regform">
         <div class="login-box">
             <div class="row1">
                 <h2>Belépés</h2>

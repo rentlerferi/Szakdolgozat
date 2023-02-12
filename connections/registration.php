@@ -19,7 +19,7 @@ $neptunfel = strtoupper($neptun);
 /*$hossz2 = strlen($titkositott);
 print "$hossz2";*/
 
-if ($first > 0 && $last > 0 && $vane == 0 && $kodhossz == 6 && $jelszo == $jelszo2 && $jelszohossz >= 8 && $jelszohossz <= 16) {
+if ($first > 0 && $last > 0 && $vane == 0 && $kodhossz == 6 && $jelszo == $jelszo2 && $jelszohossz >= 8) {
 	$sql = $conn->query("INSERT INTO registered_users VALUES('$neptun','$firstname','$lastname','$email','$titkositott', now()) ");
 	if($sql)
 	{
@@ -39,7 +39,7 @@ else if ($jelszo != $jelszo2)
 	print "<div class='not'>A jelszavak nem egyeznek! </div>";
 else if ($vane > 0)
 	print "<div class='not'>Ez a felhasználó már létezik! </div>";
-else if ($jelszohossz < 8 || $jelszohossz > 16)
-	print "<div class='not'>A jelszó 8 és 16 karakter között legyen!</div>";
+else if ($jelszohossz < 8 )
+	print "<div class='not'>A jelszó legalább 8 kraktert kell hogy tartalmazzon!</div>";
 
 ?>
