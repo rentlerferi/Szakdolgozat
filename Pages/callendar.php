@@ -1,4 +1,4 @@
 <html>
-<h1> Orarend </h1>
+<h2> Órarend </h2>
 
 </html>

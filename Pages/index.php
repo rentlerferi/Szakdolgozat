@@ -73,18 +73,18 @@
 				print
 					'<li><a href="index.php?oldal=callendar">Órarend</a></li>
         		<li><a href="index.php?oldal=profile">Profil</a></li>
-				<li><a href="index.php?oldal=kilep">Kilépés</a></li>';
+				<li><a href="index.php?oldal=logout">Kilépés</a></li>';
 			}
 			?>
 		</ul>
 	</nav>
-
 </header>
 
 <body>
 	<?php
-	if (isset($_SESSION["id"]))
-		print "<div class='not'>Üdvözlünk: " . $_SESSION["id"] . "</div>";
+	if (isset($_SESSION["id"])) {
+		
+	}
 	?>
 	<div id="content">
 		<?php
@@ -122,13 +122,13 @@
 				target="https://www.instagram.com/pannon_egyetem/?hl=hu" role="button"><i
 					class="fab fa-instagram"></i></a>
 			<!-- Github -->
-			<a class="btn  text-white " style="background-color: #333333;" title="Github oldalam"
+			<a class="btn  text-white " style="background-color: #008737;" title="Github oldalam"
 				href="https://github.com/rentlerferi/Szakdolgozat.git"
 				target="https://github.com/rentlerferi/Szakdolgozat.git" role="button"><i class="fab fa-github"></i></a>
 			<!-- coffee -->
 			<a class="btn  text-white" style="background-color: #481449;" title="Buy me a cofee" href="#!" target=""
 				role="button"><i class="fas fa-mug-hot"></i></a>
-				
+
 		</section>
 
 		<!-- Section: Social media -->
