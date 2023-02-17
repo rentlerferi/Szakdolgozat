@@ -33,7 +33,7 @@
 
                     <label>Emailcím:</label>
 
-                    <input class="input-field" type="text" placeholder="E-mail" name="mail"
+                    <input class="input-field" type="text" placeholder="janesmail@gmail.com" name="mail"
                         attern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required
                         oninvalid="this.setCustomValidity('E-mail megadása kötelező Pl, Valami@example.com')">
 

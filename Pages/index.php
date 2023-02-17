@@ -11,6 +11,9 @@
 	<link href="../style/buildings.css" rel="stylesheet" type="text/css" />
 	<link href="../style/main.css" rel="stylesheet" type="text/css" />
 	<link href="../style/login.css" rel="stylesheet" type="text/css" />
+	<link href="../style/profile.css" rel="stylesheet" type="text/css" />
+
+
 
 	<script src="../javascript/maps.js"></script>
 	<script src="../javascript/progressbar.js"></script>
@@ -59,21 +62,21 @@
 	<img src="../Images/log.png" width="650px" margin-bottom="1%">
 	<nav>
 		<ul>
-			<li><a href="index.php?oldal=main">Kezdőlap</a></li>
-			<li><a href="index.php?oldal=buildings">Épületek</a></li>
-			<li><a href="index.php?oldal=places">Nevezetességek</a></li>
+			<li><a href="index.php?page=main">Kezdőlap</a></li>
+			<li><a href="index.php?page=buildings">Épületek</a></li>
+			<li><a href="index.php?page=places">Nevezetességek</a></li>
 			<?php
 			session_start();
 			if (!isset($_SESSION["id"])) {
 				print
-					'<li><a href="index.php?oldal=regform">Regisztráció</a></li>
-				<li><a href="index.php?oldal=login_field">Belépés</a></li>';
+					'<li><a href="index.php?page=regform">Regisztráció</a></li>
+				<li><a href="index.php?page=login_field">Belépés</a></li>';
 			}
 			if (isset($_SESSION["id"])) {
 				print
-					'<li><a href="index.php?oldal=callendar">Órarend</a></li>
-        		<li><a href="index.php?oldal=profile">Profil</a></li>
-				<li><a href="index.php?oldal=logout">Kilépés</a></li>';
+					'<li><a href="index.php?page=callendar">Órarend</a></li>
+        		<li><a href="index.php?page=profile">Profil</a></li>
+				<li><a href="index.php?page=logout">Kilépés</a></li>';
 			}
 			?>
 		</ul>
@@ -81,15 +84,10 @@
 </header>
 
 <body>
-	<?php
-	if (isset($_SESSION["id"])) {
-		
-	}
-	?>
 	<div id="content">
 		<?php
-		if (isset($_GET["oldal"])) {
-			$o = $_GET["oldal"];
+		if (isset($_GET["page"])) {
+			$o = $_GET["page"];
 			$o .= ".php";
 			include($o);
 		} else

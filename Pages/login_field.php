@@ -1,13 +1,13 @@
 <html>
+
 <body onload="document.loginform.reset();">
-    <div class="regform">
+    <div class="logform">
         <div class="login-box">
             <div class="row1">
                 <h2>Belépés</h2>
                 <span>Nincs még fiókod? Regisztrálj <a href="index.php?page=regform">itt!</a></span>
                 <form name="loginform" class="login" method="POST">
                     <label class="loglabel">Neptunkód:</label>
-
                     <input class="input-field" type="text" placeholder="Neptunkód" name="neptuncode"
                         pattern="[A-Za-z]{,6}" required oninvalid="this.setCustomValidity('Invalid neptunkód')">
                     <label class="loglabel">Jelszó:</label>
@@ -22,6 +22,7 @@
                 include "../connections/connection.php";
                 if (isset($_POST["login"])) {
                     include_once("../connections/login.php");
+
                 }
                 ?>
             </div>

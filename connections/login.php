@@ -5,17 +5,16 @@
 		$titkositott = md5($pw);
 		$ncfel = strtoupper($nc);
 		
-		$sql = $conn->query("SELECT * FROM registered_users WHERE neptun LIKE '$nc' && password like '$ncfel'"); 
-		$vane = $sql->num_rows;
-
-		$name = $conn->query("SELECT lastName FROM registered_users WHERE neptun LIKE '$ncfel'");
+		$sql = $conn->query("SELECT * FROM registered_users WHERE neptun LIKE '$ncfel' && password like '$titkositott'"); 
+		$exists = $sql->num_rows;
 		
+		$name = $conn->query("SELECT lastName FROM registered_users WHERE neptun LIKE '$ncfel'");
 		//ellenörzés
 	
-		if($vane == 1)
+		if($exists == 1)
 		{
-			$_SESSION["id"] = $name;
-			header("Location:?oldal=main");
+			$_SESSION["id"] = $ncfel;
+			//header("Location:?page=main");
 		}
 		else
 			print "Hibás neptunkód vagy jelszó!";

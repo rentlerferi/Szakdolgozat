@@ -1,16 +1,4 @@
 <html>
-<style>
-    #kep {
-        width: 400px;
-        transition: all 0.5s;
-    }
-
-    #kep:hover {
-        width: 550px;
-        border: 2px white black;
-        box-shadow: 0px 0px 10px grey;
-    }
-</style>
 
 <body>
     <h2>Kollégiumok </h2>
