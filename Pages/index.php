@@ -73,10 +73,14 @@
 				<li><a href="index.php?page=login_field">Belépés</a></li>';
 			}
 			if (isset($_SESSION["id"])) {
+				$id = session_id();
+				
 				print
 					'<li><a href="index.php?page=callendar">Órarend</a></li>
         		<li><a href="index.php?page=profile">Profil</a></li>
 				<li><a href="index.php?page=logout">Kilépés</a></li>';
+
+				print ('<div class="session">Üdvözlünk:</div>'. $_SESSION["id"]);
 			}
 			?>
 		</ul>

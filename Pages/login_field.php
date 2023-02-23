@@ -22,7 +22,6 @@
                 include "../connections/connection.php";
                 if (isset($_POST["login"])) {
                     include_once("../connections/login.php");
-
                 }
                 ?>
             </div>
