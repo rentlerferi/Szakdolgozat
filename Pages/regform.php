@@ -34,7 +34,7 @@
                     <label>Emailcím:</label>
 
                     <input class="input-field" type="text" placeholder="janesmail@gmail.com" name="mail"
-                        attern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required
                         oninvalid="this.setCustomValidity('E-mail megadása kötelező Pl, Valami@example.com')">
 
                     <label>Neptun kód:</label>
@@ -74,5 +74,8 @@
         </div>
     </div>
 </body>
+<script>
+    $('.input-field').on('input', function(){this.setCustomValidity('');});
+    </script>
 
 </html>

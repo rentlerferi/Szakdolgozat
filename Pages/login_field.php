@@ -1,4 +1,10 @@
 <html>
+<?php
+include "../connections/connection.php";
+if (isset($_POST["login"])) {
+    include_once("../connections/login.php");
+}
+?>
 
 <body onload="document.loginform.reset();">
     <div class="logform">
@@ -9,7 +15,7 @@
                 <form name="loginform" class="login" method="POST">
                     <label class="loglabel">Neptunkód:</label>
                     <input class="input-field" type="text" placeholder="Neptunkód" name="neptuncode"
-                        pattern="[A-Za-z]{,6}" required oninvalid="this.setCustomValidity('Invalid neptunkód')">
+                        pattern="[A-Za-z]{,6}" required oninvalid="this.setCustomValidity('Helytelen neptunkód')">
                     <label class="loglabel">Jelszó:</label>
                     <input class="input-field" type="password" placeholder="Jelszó" name="password" pattern="{8,}"
                         required oninvalid="this.setCustomValidity('Jelszó megadása kötelező')">
@@ -17,13 +23,6 @@
                     <span>Elfelejetett <a href="#">jelszó?</a></span>
                     <button type="submit" class="reg-logbttn" name='login'>Login</button>
                 </form>
-
-                <?php
-                include "../connections/connection.php";
-                if (isset($_POST["login"])) {
-                    include_once("../connections/login.php");
-                }
-                ?>
             </div>
             <div class="row2">
                 <div class="description">

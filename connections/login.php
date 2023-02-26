@@ -11,12 +11,11 @@ $exists = $sql->num_rows;
 $name = $conn->query("SELECT lastName FROM registered_users WHERE neptun LIKE '$ncfel'");
 //ellenörzés
 
-if ($exists == 1) {
-	session_id($ncfel);
-	$_SESSION["id"] = $ncfel;
-	//header("Location:?page=main");
-} else {
+if ($exists != 1) 
 	print "Hibás neptunkód vagy jelszó!";
+	
+	else{
+		$_SESSION["id"] = $ncfel;
+	header("Location:?page=main");
 }
-header("Refresh:0; url=main.php");
 ?>
