@@ -1,6 +1,7 @@
 let map;
 
-var icon = "../Images/door.png"
+var enterance = "../Images/door.png"
+var car = "../Images/car.png"
 //kk
 const KKBuilding = { lat: 47.085661211826306, long: 17.909818088728127 };
 const KKEnterance = { lat: 47.08577263491504, long: 17.9093277029896 };
@@ -41,8 +42,49 @@ const LibraryBuilding = { lat: 47.08628152669935, lng: 17.901512975418633 };
 const LibraryEnterance = { lat: 47.08638793498688, lng: 17.901624601813953 };
 
 
+//kk
+async function kkMap() {
 
+  map = new google.maps.Map(document.getElementById("kkmap"), {
+    center: KKBuilding,
+    zoom: 18,
+    mapId: "7a17f3fb28447a5e",
 
+  });
+
+  const marker = new google.maps.Marker({
+    position: KKBuilding,
+    map: map,
+    animation: google.maps.Animation.DROP
+  });
+
+  const door = new google.maps.Marker({
+    position: KKEnterance,
+    title: "Központi Kollégium Épület bejárat",
+    label: "Központi Kollégium Épület bejárat",
+    map: map,
+    icon: {
+      url: enterance,
+      scaledSize: new google.maps.Size(35, 35)
+    },
+    animation: google.maps.Animation.DROP
+  });
+
+    const parking = new google.maps.Marker({
+      position: KKVCar,
+      title: "Központi Kollégium Parkoló bejárat",
+      label: "Központi Kollégium Parkoló bejárat",
+      map: map,
+      icon: {
+        url: car,
+        scaledSize: new google.maps.Size(35, 35)
+      },
+      animation: google.maps.Animation.DROP
+  });
+}
+
+//magi
+//i
 async function initMap() {
 
   map = new google.maps.Map(document.getElementById("map"), {
@@ -64,7 +106,7 @@ async function initMap() {
     label: "I Épület bejárat",
     map: map,
     icon: {
-      url: icon,
+      url: enterance,
       scaledSize: new google.maps.Size(35, 35)
     },
     animation: google.maps.Animation.DROP

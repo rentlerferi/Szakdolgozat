@@ -10,7 +10,10 @@
             Egyetem városrész szívében helyezkedik el. A kollégium 5 emeletes, szintenként 90 ember lakik 6 fős
             lakóegységekben.</p>
     </div>
-    
+    <div id="kkmap"></div>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF67wG4ptca4FklVz7uXUbwxmOD4q5SAQ&callback=kkMap">
+        </script>
 
     <div class="display">
 
@@ -101,6 +104,15 @@
     <div class="description">
 
         <p>
+            8200 Veszprém, Wartha Vince utca 1. Környezettudományi Intézet
+
+            Limnológia Intézeti Tanszék
+
+            Radiokémiai és Radioökológiai Intézet iomérnöki, Membrántechnológiai és Energetikai Kutató Intézet
+
+            Kémia Intézet III.
+
+            Szerves Kémia Intézeti Tanszék
         </p>
     </div>
 
@@ -122,6 +134,7 @@
     <div class="description">
 
         <p>
+            8200 Veszprém, Wartha Vince utca 1. Drámapedagógiai terem, M1-M2 oktatási termek
         </p>
     </div>
 
@@ -137,11 +150,12 @@
         </div>
 
     </div>
-    
+
     <h3>Polinszky-terem - Auditorium Maximum</h3>
     <div class="description">
 
         <p>
+            8200 Veszprém, Wartha Vince utca 1, Polinszky nagy előadó terem
         </p>
     </div>
 
@@ -157,11 +171,14 @@
         </div>
 
     </div>
-    
+
     <h3>Pannon Egyetem Egyetemi Könyvtár és Tudásközpont</h3>
     <div class="description">
 
         <p>
+            8200 Veszprém, Wartha Vince utca 1 ,Egyetemi Könyvtár és Levéltár I., Egyetemi Könyvtár és Levéltár II.
+
+            Pannon Nyelvvizsga és Nyelvoktatási Központ, Egyetemi Könyvtár és Levéltár III.
         </p>
     </div>
 
