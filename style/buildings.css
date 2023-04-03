@@ -1,5 +1,5 @@
 .display {
-  width: 100%;
+  width: auto;
   height: auto;
   background-color: #f1f1f1;
   display: flex;
@@ -7,6 +7,7 @@
   flex: wrap;
 }
 
+.display .container,
 .first-row,
 .second-row {
   flex-basis: 50%;
@@ -17,15 +18,9 @@
   flex-grow: 1;
 }
 
-.first-row image {
+#map {
+  height:500px;
   width: 100%;
-  display: block;
-  height: auto;
-  border: 1px solid white;
-  padding: 0;
-  margin: 0;
-  border-radius: 25px;
-
 }
 
 iframe {
@@ -55,3 +50,6 @@ p {
   width: auto;
 
 }
+
+/*-------gallery----------*/
+.display .container {}

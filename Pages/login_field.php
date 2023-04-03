@@ -26,25 +26,10 @@ if (isset($_POST["login"])) {
             </div>
             <div class="row2">
                 <div class="description">
-                    <h2>Belépés</h2>
-                    <p>Laoreet non curabitur gravida arcu. Pretium viverra suspendisse potenti nullam. Semper quis
-                        lectus nulla at
-                        volutpat
-                        diam ut. Ullamcorper sit amet risus nullam. Sit amet consectetur adipiscing elit duis
-                        tristique
-                        sollicitudin
-                        nibh.
-                        Arcu odio ut sem nulla pharetra diam sit amet. Sapien faucibus et molestie ac feugiat sed.
-                        Id
-                        faucibus nisl
-                        tincidunt eget nullam non. Blandit cursus risus at ultrices mi. Neque sodales ut etiam sit.
-                        Consectetur
-                        adipiscing
-                        elit duis tristique sollicitudin nibh sit amet. Nibh tortor id aliquet lectus. Ut eu sem
-                        integer
-                        vitae justo
-                        eget
-                        magna fermentum.</p>
+                    <h2>Lépj be!</h2>
+                    <p>Lépj be te is hogy új funkciókat érhess el! A belépéshez csupán csak a neptunkódra és a megadott
+                        jelszavadra van szükség ha van már fiókod. Felöltheted órarendedet illetve módódsíthatod a
+                        regisztrációkor megadott adataidat.</p>
                 </div>
             </div>
 

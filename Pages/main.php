@@ -1,6 +1,7 @@
 <html style="m-0 p-0">
 <h2>Üdvözlünk a United Unies weboldalán!</h2>
 
+
 <div style="m-0 p-0" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-bs-interval="8000">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -30,78 +31,51 @@
 
 
 <div class="description">
-
+    <h3>Mi a célunk?</h3>
     <p>Amikor bekerül valaki az egyetemre, egy csomó idegen emberrel, épülettel és kifejezéssel találkozik mindenki.
         Ha csinálnánk egy közvéleménykutatást az első napokban hogy ki tudja melyik az A01-es terem, nagy összeget
         tennénk rá hogy sokan csak vennének egy nagy levegőt. </p>
 
     <p>A sok kérdezősködés és aggódás helyett mi szeretnénk nektek segíteni, és egy helyre összegyűjteni azokat
         a dolgokat amikre szükségetek lehet az egyetemi pályafutásotok alatt. </p>
+    <h2>Kicsit az egyetemről</h2>
+    <p>A Pannon Egyetem (röviden: PE) a Közép- és Nyugat-Dunántúli régió meghatározó felsőoktatási intézménye.
+        Bölcsészet-, a közgazdaság-, műszaki informatikai-, nevelés-, társadalom- és a természettudományok területén
+        kínál képzéseket.</p>
+    <p>Az intézmény öt karral rendelkezik, oktatási helyszínei Veszprém mellett Nagykanizsa, Zalaegerszeg és Kőszeg.
+        </p0>
+    <h3>Egy kis történelem:</h3>
+    <p>Veszprémben működött Magyarország első, XIII. századi felsőoktatási intézménye, a korában nagyhírű káptalani
+        főiskola, ahol teológiát, jogot és a „hét szabad művészetet” (azaz mai szóval lényegében bölcsészetet) oktatták.
+        Itt képezték a kor magyarországi diplomatáit. Miután 1276-ban Csák Péter seregei elpusztították Veszprémet, a
+        káptalani főiskola már nem épült újjá.
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna
-        aliqua. Purus non enim praesent elementum facilisis. Euismod lacinia at quis risus sed vulputate odio ut.
-        Porttitor
-        eget dolor morbi non. Laoreet sit amet cursus sit amet dictum sit amet justo. Elementum sagittis vitae et
-        leo duis
-        ut diam. Sollicitudin nibh sit amet commodo nulla. Sit amet consectetur adipiscing elit duis tristique
-        sollicitudin
-        nibh sit. Dolor sit amet consectetur adipiscing elit ut. Id leo in vitae turpis massa sed. Vitae et leo duis
-        ut diam
-        quam nulla. Id aliquet risus feugiat in ante. Interdum velit laoreet id donec ultrices tincidunt arcu non
-        sodales.
-        Sed felis eget velit aliquet sagittis id consectetur purus.</p>
-    <p>Eget sit amet tellus cras adipiscing enim. Sed turpis tincidunt id aliquet risus feugiat in ante metus. Nisl
-        vel
-        pretium lectus quam. Nulla aliquet enim tortor at auctor. Sit amet nisl suscipit adipiscing bibendum. Eu
-        augue ut
-        lectus arcu bibendum. Iaculis at erat pellentesque adipiscing commodo elit at. Ullamcorper eget nulla
-        facilisi etiam
-        dignissim. Ipsum faucibus vitae aliquet nec. Aliquam id diam maecenas ultricies mi eget. Malesuada fames ac
-        turpis
-        egestas maecenas. Mi tempus imperdiet nulla malesuada pellentesque elit eget. Eget felis eget nunc lobortis.
-        Eget
-        nulla facilisi etiam dignissim diam. Amet nulla facilisi morbi tempus iaculis urna id volutpat. Nunc
-        faucibus a
-        pellentesque sit amet porttitor.</p>
-    <p>Laoreet non curabitur gravida arcu. Pretium viverra suspendisse potenti nullam. Semper quis lectus nulla at
-        volutpat
-        diam ut. Ullamcorper sit amet risus nullam. Sit amet consectetur adipiscing elit duis tristique sollicitudin
-        nibh.
-        Arcu odio ut sem nulla pharetra diam sit amet. Sapien faucibus et molestie ac feugiat sed. Id faucibus nisl
-        tincidunt eget nullam non. Blandit cursus risus at ultrices mi. Neque sodales ut etiam sit. Consectetur
-        adipiscing
-        elit duis tristique sollicitudin nibh sit amet. Nibh tortor id aliquet lectus. Ut eu sem integer vitae justo
-        eget
-        magna fermentum.</p>
-    <p> Sagittis nisl rhoncus mattis rhoncus. Sagittis orci a scelerisque purus semper eget duis at tellus. Ac
-        turpis
-        egestas integer eget aliquet nibh. Augue neque gravida in fermentum et sollicitudin ac. Habitant morbi
-        tristique
-        senectus et netus et. Senectus et netus et malesuada fames ac turpis egestas. Auctor eu augue ut lectus arcu
-        bibendum. Cursus in hac habitasse platea dictumst quisque sagittis purus sit. Venenatis urna cursus eget
-        nunc
-        scelerisque viverra mauris in aliquam. Ut aliquam purus sit amet luctus venenatis lectus magna. Ipsum
-        suspendisse
-        ultrices gravida dictum fusce ut. Eget velit aliquet sagittis id consectetur purus ut. Sagittis eu volutpat
-        odio
-        facilisis mauris sit amet. Dictum varius duis at consectetur lorem donec massa sapien. Amet venenatis urna
-        cursus
-        eget. Pretium fusce id velit ut.</p>
-    <p> Mattis enim ut tellus elementum sagittis. Vel eros donec ac odio tempor orci dapibus ultrices in. Volutpat
-        diam ut
-        venenatis tellus. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. Magna etiam tempor orci
-        eu
-        lobortis elementum nibh tellus molestie. Sapien et ligula ullamcorper malesuada proin libero nunc consequat
-        interdum. Ut consequat semper viverra nam libero. Sem nulla pharetra diam sit amet nisl suscipit adipiscing.
-        Congue
-        mauris rhoncus aenean vel elit. Ut sem viverra aliquet eget. Nunc sed velit dignissim sodales ut. Etiam erat
-        velit
-        scelerisque in dictum non consectetur a erat. Donec et odio pellentesque diam volutpat commodo sed egestas
-        egestas.
-        Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Egestas diam in arcu cursus. Hac
-        habitasse
-        platea dictumst quisque sagittis.</p>
+        Veszprém 1949-ben válhatott ismét egyetemi várossá. Az ebben az évben hozott XXII. törvény[2] rendelkezett a
+        Budapesti Műszaki Egyetem Nehézvegyipari Karának a városba telepítéséről. Az intézkedés célja az volt, hogy
+        Veszprém a Közép-Dunántúl tudásközpontjává váljon. Az intézmény 1949. szeptember 26-án 107 hallgatóval és 16
+        oktatóval, egy (a mai A) épületben kezdte meg működését.
+
+        1951 őszén jött létre az önálló egyetem. Az intézmény megszervezésében különösen nagy szerepet játszott
+        Polinszky Károly, aki 1949-től (két év kihagyással) 1961-ig az egyetem dékánja, majd 1963-ig rektora volt.
+        Emlékét a Polinszky-terem (a PE legnagyobb előadóterme) és mellszobor őrzi. A hallgatói létszám bővülése miatt
+        új épületeket kellett építeni. 1957-re elkészült a mai E, D, C és B épület, majd 1961-re az egyetem aulája.
+        1995-ben az intézmény tulajdonába kerültek az egykori Nehézvegyipari Kutatóintézetnek és a Magyar Ásványolaj és
+        Földgáz Kísérleti Intézetnek az Egyetemváros nyugati részén található épületei. 2003-ban a Vár több épületét is
+        megkapta az egyetem, ahol számos bölcsészettudományi tanszéke került elhelyezésre.</p>
+    <p> A rendszerváltozás után szükségessé vált az egyetem profiljának bővítése. Újabb bölcsészettudományi,
+        társadalomtudományi, gazdaságtudományi, informatikai és mérnöki szakok jöttek létre. Az intézmény igazi többkarú
+        universitássá vált, és az 1990/1991-es tanévtől a Veszprémi Egyetem nevet viselte.
+
+        A 2006. év elején született döntés az intézmény nevének Pannon Egyetemre való változtatásáról. A vezetők úgy
+        vélték, hogy ez jobban kifejezi az egyetem már betöltött, illetve betölteni kívánt átfogó, regionális szerepét.
+        2006. március 1-jétől az intézmény ezt a nevet használja.
+
+        Ugyancsak 2006-ban - az új Felsőoktatás Törvény előírásainak szellemében - jelentős szervezeti változás
+        kezdődött az intézményben. Mind a karokon belül, mind a központi igazgatás területén a túlzottan szétaprózott
+        egységek összevonásával új, a korábbinál hatékonyabb szervezet alakult ki. Ekkor jött létre a Tanácsadó,
+        Továbbképző és Távoktatási Intézet utódjaként a Felnőttképzési Intézet is, amely a felsőfokú szakképzéseket,
+        valamint a felnőttoktatás különböző formáit gondozza.</p>
+    
 
 
 </div>

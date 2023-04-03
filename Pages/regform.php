@@ -75,7 +75,7 @@
     </div>
 </body>
 <script>
-    $('.input-field').on('input', function(){this.setCustomValidity('');});
-    </script>
+    $('.input-field').on('input', function () { this.setCustomValidity(''); });
+</script>
 
 </html>

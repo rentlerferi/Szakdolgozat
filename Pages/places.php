@@ -8,7 +8,7 @@
   <div class="display">
 
     <div class="first-row">
-      <img src="../Images/szobor1.jpeg">
+      <img src="../Images/szobor1.jpeg" class="img-fluid">
 
     </div>
     <div class=" second-row">
@@ -26,7 +26,7 @@
   <div class="display">
 
     <div class="first-row">
-      <img src="../Images/szobor2.jpeg">
+      <img src="../Images/szobor2.jpeg" class="img-fluid">
 
     </div>
     <div class=" second-row"><iframe
@@ -43,7 +43,7 @@
   <div class="display">
 
     <div class="first-row">
-      <img src="../Images/szobor3.jpg">
+      <img src="../Images/szobor3.jpg" class="img-fluid">
 
     </div>
     <div class=" second-row">
@@ -65,7 +65,7 @@
   <div class="display">
 
     <div class="first-row">
-      <img src="../Images/varhegy.jpg">
+      <img src="../Images/varhegy.jpg" class="img-fluid">
 
     </div>
     <div class=" second-row">
@@ -84,7 +84,7 @@
   <div class="display">
 
     <div class="first-row">
-      <img src="../Images/tuztorony.jpg">
+      <img src="../Images/tuztorony.jpg" class="img-fluid">
 
 
     </div>
@@ -104,7 +104,7 @@
     <div class="display">
 
       <div class="first-row">
-        <img src="../Images/szentistv.jpg">
+        <img src="../Images/szentistv.jpg" class="img-fluid">
 
 
       </div>
@@ -124,7 +124,7 @@
     <div class="display">
 
       <div class="first-row">
-        <img src="../Images/hosok.jpg">
+        <img src="../Images/hosok.jpg" class="img-fluid">
 
 
       </div>
@@ -145,7 +145,7 @@
     <div class="display">
 
       <div class="first-row">
-        <img src="../Images/ovaros.jpg">
+        <img src="../Images/ovaros.jpg" class="img-fluid">
 
 
 
@@ -169,7 +169,7 @@
     <div class="display">
 
       <div class="first-row">
-        <img src="../Images/gizellakilato.jpeg">
+        <img src="../Images/gizellakilato.jpeg" class="img-fluid">
 
 
       </div>
@@ -188,7 +188,7 @@
     <div class="display">
 
       <div class="first-row">
-        <img src="../Images/cannyon.jpg">
+        <img src="../Images/cannyon.jpg" class="img-fluid">
 
 
       </div>
@@ -208,7 +208,7 @@
     <div class="display">
 
       <div class="first-row">
-        <img src="../Images/geszti.jpg">
+        <img src="../Images/geszti.jpg" class="img-fluid">
 
       </div>
       <div class=" second-row">

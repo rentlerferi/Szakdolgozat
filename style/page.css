@@ -5,12 +5,11 @@ header {
 }
 
 body {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 8%, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 1) 92%);
+  background-color: rgb(252, 220, 180);
   background-position: center;
   font-family: Arial, Helvetica, sans-serif;
   height: auto;
-  
+
 
 
 }
@@ -22,7 +21,6 @@ body {
   margin-left: 15%;
   border-radius: 30px;
   margin-bottom: 6%;
-
 }
 
 .carousel-control-next,
@@ -45,14 +43,15 @@ h2,
 h3 {
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 20px;
-  padding-top: 3px;;
+  padding-top: 3px;
+  margin: 2%;
 }
 
 h2 {
   font-weight: 500;
   font-size: 30px;
   color: white;
-  width: 100%;
+  width: 95%;
   background-color: #343a40;
   padding-left: 30px;
   margin-bottom: 5px;
@@ -62,7 +61,7 @@ h3 {
   font-weight: 500;
   font-size: 20px;
   color: white;
-  width: 100%;
+  width: 95%;
   background-color: #646363;
   padding-left: 30px;
   margin-top: 5px;
@@ -86,6 +85,7 @@ img {
   margin-right: auto;
   padding: 10px;
 }
+
 .message {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
@@ -98,10 +98,10 @@ img {
   margin-bottom: 5px;
   border-radius: 25px;
   width: 50%;
-  margin-left:25% ;
+  margin-left: 25%;
 
 }
-.session{
+
+.session {
   color: white;
 }
-

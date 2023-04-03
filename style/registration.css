@@ -1,22 +1,22 @@
  /*registration*/
 
  .regform {
-   width: 100%;
+   width: auto;
    height: auto;
    background-image: url("../Images/registration.jpg");
    background-position: center;
    padding: 2%;
    margin-top: 30px;
-   border-radius: 20px
+   border-radius: 20px;
+   position: relative;
+   align-items: center;
+
  }
 
  .signup-box {
-   float: top;
    display: flex;
    align-items: center;
-   width: 70%;
    flex: wrap;
-   margin-left: 32.5%;
  }
 
  .col-2 {

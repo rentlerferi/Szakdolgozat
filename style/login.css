@@ -1,11 +1,11 @@
 .logform {
     width: 100%;
     height: auto;
-    background-image: url("../Images/registration.jpg");
+    background-image: url("../Images/login.jpg");
     background-position: center;
     padding: 2%;
     margin-top: 30px;
-    border-radius: 20px
+    border-radius: 20px;
 }
 
 .reg-logbttn {
@@ -29,17 +29,15 @@
 }
 
 .login-box {
-    float: top;
-    display: flex;
     width: 70%;
+    display: flex;
     flex: wrap;
-    margin-left: 15%;
-    padding: 5%;
+    align-content: center;
 }
 
 .row1,
 .row2 {
-    flex-basis: 40%;
+    flex-basis: 50%;
     flex-grow: 1;
     padding: 15px;
     background-color: #fff;

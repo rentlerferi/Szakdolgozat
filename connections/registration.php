@@ -13,11 +13,9 @@ $last = strlen($lastname);
 $kodhossz = strlen($neptun);
 $jelszohossz = strlen($jelszo);
 
-//jelszó titkosítás
 $titkositott = md5($jelszo);
 $neptunfel = strtoupper($neptun);
-/*$hossz2 = strlen($titkositott);
-print "$hossz2";*/
+
 
 if ($first > 0 && $last > 0 && $vane == 0 && $kodhossz == 6 && $jelszo == $jelszo2 && $jelszohossz >= 8) {
 	$sql = $conn->query("INSERT INTO registered_users VALUES('$neptun','$firstname','$lastname','$email','$titkositott', now()) ");

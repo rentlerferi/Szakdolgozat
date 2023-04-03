@@ -18,26 +18,46 @@ if (isset($_POST["send"])) {
         <!-- left column -->
         <div class="informationlisting">
             <h3>Szémélyes adatok:</h3>
-            <label>Vezetéknév</label>
             <?php
             $id = $_SESSION["id"];
-            print('ID :' . $id . "asd");
             $result = $conn->query("SELECT firstName, lastName, email FROM registered_users WHERE neptun LIKE '$id'");
             $row = $result->fetch_row();
-            print('Vezetéknév: ' . $row[0]);
-            //print('Vezetéknév' . $sure);
             ?>
-            <label>Keresztnév</label>
-            <?php
-            print('Keresztnév' . $row[1]);
-            ?>
-            <label>Email</label>
-            <?php
-            print('Email' . $row[2]);
-            ?>
-
+            <table>
+                <tbody>
+                    <tr>
+                        <td> <label>Vezetéknév</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <?php
+                            print($row[0]);
+                            ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Keresztnév</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <?php
+                            print($row[1]);
+                            ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Email</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <?php
+                            print($row[2]);
+                            ?>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-
         <!-- edit form column -->
         <div class="editinfo">
 
@@ -80,7 +100,8 @@ if (isset($_POST["send"])) {
 
                     <input type="submit" name="send" class="btn btn-success" value="Változtatások mentése">
                     <input type="reset" class="btn btn-info" value="Mégse">
-                    <input type="button" onclick="deleteAccount()" name="delete" class="btn btn-danger" value="Fiók törlése">
+                    <input type="button" onclick="deleteAccount()" name="delete" class="btn btn-danger"
+                        value="Fiók törlése">
                 </div>
 
             </form>

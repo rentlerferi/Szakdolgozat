@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -12,21 +13,24 @@
     <link href="../style/main.css" rel="stylesheet" type="text/css" />
     <link href="../style/login.css" rel="stylesheet" type="text/css" />
     <link href="../style/profile.css" rel="stylesheet" type="text/css" />
+    <link href="../style/callendar.css" rel="stylesheet" type="text/css" />
 
 
 
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="../javascript/maps.js"></script>
-    <script src="../javascript/progressbar.js"></script>
+    <script src="../javascript/gallery.js"></script>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+        </script>
 
     <!-- Bootstrap stylesheet -->
 
@@ -46,17 +50,17 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
+        </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+        </script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
+
 
 </head>
 <header>
@@ -67,23 +71,23 @@
             <li><a href="index.php?page=buildings">Épületek</a></li>
             <li><a href="index.php?page=places">Nevezetességek</a></li>
             <?php
-			session_start();
-			if (!isset($_SESSION["id"])) {
-				print
-					'<li><a href="index.php?page=regform">Regisztráció</a></li>
+            session_start();
+            if (!isset($_SESSION["id"])) {
+                print
+                    '<li><a href="index.php?page=regform">Regisztráció</a></li>
 				<li><a href="index.php?page=login_field">Belépés</a></li>';
-			}
-			if (isset($_SESSION["id"])) {
-				$id = session_id();
-				
-				print
-					'<li><a href="index.php?page=callendar">Órarend</a></li>
+            }
+            if (isset($_SESSION["id"])) {
+                $id = session_id();
+
+                print
+                    '<li><a href="index.php?page=callendar">Órarend</a></li>
         		<li><a href="index.php?page=profile">Profil</a></li>
 				<li><a href="index.php?page=logout">Kilépés</a></li>';
 
-				print ('<div class="session">Üdvözlünk:</div>'. $_SESSION["id"]);
-			}
-			?>
+                print('<div class="session">Üdvözlünk:</div>' . $_SESSION["id"]);
+            }
+            ?>
         </ul>
     </nav>
 </header>
@@ -91,13 +95,13 @@
 <body>
     <div id="content">
         <?php
-		if (isset($_GET["page"])) {
-			$o = $_GET["page"];
-			$o .= ".php";
-			include($o);
-		} else
-			include("main.php");
-		?>
+        if (isset($_GET["page"])) {
+            $o = $_GET["page"];
+            $o .= ".php";
+            include($o);
+        } else
+            include("main.php");
+        ?>
     </div>
 </body>
 <footer class="bg-dark text-center text-white fixed-bottom">
@@ -143,7 +147,7 @@
     <div class="text-center p-3 " style="background-color: rgba(0, 0, 0, 1); height: auto;">
         Copyright &copy;:
         <script>
-        document.write(new Date().getFullYear());
+            document.write(new Date().getFullYear());
         </script>
     </div>
     <!-- Copyright -->
@@ -151,18 +155,18 @@
 
 <script>
     function deleteAccount() {
-		$id = "<?php $_SESSION['id'] ?>";
+        $id = "<?php $_SESSION['id'] ?>";
         if (confirm("biztos")) {
             jQuery.ajax({
                 type: "POST",
                 url: "../connections/delete.php",
-                data: {id:$id},
-                success: function() {
+                data: { id: $id },
+                success: function () {
                     console.log($id);
                 }
             });
         }
     }
-    </script>
+</script>
 
 </html>
