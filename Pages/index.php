@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+<?php
+echo 'PHP version: ' . phpversion();?>
 
 <head>
     <title>United Unies</title>
@@ -111,7 +113,7 @@
         <section class="mb-1 ">
 
             <!-- weboldal -->
-            <a class="btn text-white roundeed-circle " style="background-color: #ffac44;" title="Eredeti weboldal"
+            <a class="btn text-white roundeed-circle " style="background-color: #ffac44;" title="Hivatalos weboldal"
                 href="https://uni-pannon.hu/hu/" target="https://uni-pannon.hu/hu/" role="button"><i
                     class="fab fa-fly"></i></a>
             <!-- Facebook -->

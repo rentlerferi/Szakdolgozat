@@ -10,15 +10,12 @@
             Egyetem városrész szívében helyezkedik el. A kollégium 5 emeletes, szintenként 90 ember lakik 6 fős
             lakóegységekben.</p>
     </div>
-    <div id="kkmap"></div>
-    <script async
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF67wG4ptca4FklVz7uXUbwxmOD4q5SAQ&callback=kkMap">
-        </script>
+    <div id="map1" class="map"></div>
+
 
     <div class="display">
 
     </div>
-
 
     <h3>Hotel Magister </h3>
     <div class="description">
@@ -28,6 +25,7 @@
             a szobákhoz minikonyha (mosogató, hűtőszekrény, mikrohullámú sütő),
             fürdőszoba és mellékhelyiség is tartozik.</p>
     </div>
+    <div id="map2" class="map"></div>
     <div class="display">
 
         <div class="container">
@@ -47,10 +45,8 @@
             székhelye.
         </p>
     </div>
-    <div id="map"></div>
-    <script async
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF67wG4ptca4FklVz7uXUbwxmOD4q5SAQ&callback=initMap">
-        </script>
+    <div id="map3" class="map"></div>
+
     <div class="display">
 
         <div class="container">
@@ -68,8 +64,10 @@
             Gazdálkodási Intézet, Közgazdasági Intézet és a Menedzsment Intézet székhelye.
         </p>
     </div>
+    <div id="map4" class="map"></div>
 
     <div class="display">
+
         <div class="container">
 
         </div>
@@ -86,7 +84,7 @@
             Kutatóintézet, Műszaki Tanulmányok Kutató- Fejlesztő Központ és a Természettudományi Központ székhelye
         </p>
     </div>
-
+    <div id="map5" class="map"></div>
 
     <div class="display">
 
@@ -116,7 +114,7 @@
         </p>
     </div>
 
-
+    <div id="map6" class="map"></div>
     <div class="display">
 
         <div class="container">
@@ -137,7 +135,7 @@
             8200 Veszprém, Wartha Vince utca 1. Drámapedagógiai terem, M1-M2 oktatási termek
         </p>
     </div>
-
+    <div id="map7" class="map"></div>
 
     <div class="display">
 
@@ -159,7 +157,7 @@
         </p>
     </div>
 
-
+    <div id="map8" class="map"></div>
     <div class="display">
 
         <div class="container">
@@ -182,7 +180,7 @@
         </p>
     </div>
 
-
+    <div id="map9" class="map"></div>
     <div class="display">
 
         <div class="container">
@@ -198,5 +196,9 @@
 
 
 </body>
+
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF67wG4ptca4FklVz7uXUbwxmOD4q5SAQ&callback=initMap">
+    </script>
 
 </html>

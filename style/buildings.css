@@ -18,9 +18,15 @@
   flex-grow: 1;
 }
 
-#map {
-  height:500px;
+.map {
+  height: 500px;
   width: 100%;
+}
+
+.marker-label {
+  color: white;
+  background-color: rgb(135, 250, 215, 0.5);
+  
 }
 
 iframe {

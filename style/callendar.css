@@ -1,0 +1,9 @@
+.upload{
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ef005d;
+    margin: 18px 0 10px;
+    background: #ef005d;
+    color: #fff;
+    cursor: pointer;
+}
