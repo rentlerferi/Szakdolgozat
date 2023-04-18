@@ -18,7 +18,7 @@ $neptunfel = strtoupper($neptun);
 
 
 if ($first > 0 && $last > 0 && $vane == 0 && $kodhossz == 6 && $jelszo == $jelszo2 && $jelszohossz >= 8) {
-	$sql = $conn->query("INSERT INTO registered_users VALUES('$neptun','$firstname','$lastname','$email','$titkositott', now()) ");
+	$sql = $conn->query("INSERT INTO registered_users VALUES('$neptunfel','$firstname','$lastname','$email','$titkositott', now()) ");
 	if($sql)
 	{
 		print " <div class='not'>Sikeres regisztráció! </div>";

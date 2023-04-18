@@ -1,3 +1,9 @@
+<?php
+include "../connections/connection.php";
+if (isset($_POST["save_callendar"])) {
+    include_once("../connections/callendarupload.php");
+}
+?>
 <html>
 <h2> Órarend </h2>
 <div class="description">
@@ -13,28 +19,17 @@ if (isset($_SESSION['message'])) {
 }
 ?>
 
+<div class="col-md-12 mt4">
+    <div class="card">
+        <div class="card-body">
+            <form action="" method="POST" enctype="multipart/form-data">
 
-<div class="crad-body">
-    <form action="../connections/callendarupload.php" method="POST" enctype="multipart/from-data">
-
-        <input class="upload" type="file" name="classes">
-        Exel file (xlsx)
-        <button type="submit" name="save_callendar" class="btn btn-primary mt-3">Feltöltés</button>
-
-    </form>
+                <input class="upload" type="file" name="import_file" id="import_file">Exel file (xlsx)
+                <button type="submit" name="save_callendar" class="btn btn-primary mt-3">Feltöltés</button>
+                <input type="button" onclick="deleteAccount()" name="delete" class="btn btn-danger"
+                    value="Órarend törlése">
+            </form>
+        </div>
+    </div>
 </div>
 
-<iframe
-    src="https://calendar.google.com/calendar/embed?src=hu.hungarian%23holiday%40group.v.calendar.google.com&ctz=Europe%2FBudapest"
-    style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-
-
-<iframe
-    src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23C0CA33&ctz=Europe%2FBudapest&mode=WEEK"
-    style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-
-</html>
-
-<?php
-
-?>

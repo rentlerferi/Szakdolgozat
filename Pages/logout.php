@@ -3,5 +3,6 @@
 	session_destroy();
 	$_SESSION = array();
 	mysqli_close($conn);
-	header("Location:?page=main");
+	//header("location:?page=main");
+	echo "<script>window.location.href='index.php'</script>"
 ?>

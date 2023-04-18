@@ -3,15 +3,16 @@
 $surname = $_POST['newsurename'];
 $lastname = $_POST['newlastname'];
 $email = $_POST['newemail'];
-$passw = $_POST['password'];
+$passw = $_POST['newpassword'];
 $passowrdagain = $_POST['newpasswordagain'];
 
 $id = $_SESSION["id"];
 
-if ($password != "" && $password == $passowrdagain) {
-	$titkositott = md5($passw );
+if ($passw != "" && $passw == $passowrdagain) {
+	$titkositott = md5($passw);
 }
 
+$sql = false;
 
 if (isset($_SESSION["id"])) {
 	if($surname!="")

@@ -38,4 +38,8 @@ if (isset($_POST["login"])) {
 
 </body>
 
+<script>
+    $('.input-field').on('input', function () { this.setCustomValidity(''); });
+</script>
+
 </html>

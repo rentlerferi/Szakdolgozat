@@ -4,57 +4,75 @@ require '../vendor/autoload.php';
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
-$id = session_id();
 
-if (isset($POST['save_callendar'])) {
+//$id = $_SESSION['id'];
 
-    $fileName = $_FILES['classes']['name'];
+if (isset($_POST['save_callendar'])) {
+
+    $fileName = basename($_FILES["import_file"]["name"]);
     $file_ext = pathinfo($fileName, PATHINFO_EXTENSION);
     $allowed_ext = ['xls', 'xlsx', 'csv'];
 
     if (in_array($file_ext, $allowed_ext)) {
 
-        $inputFileNamePath = $_FILES['classes']['tmp_name'];
 
+        $fileName = $_FILES["import_file"]["tmp_name"];
         /** Load $inputFileName to a Spreadsheet object **/
-        $spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load($inputFileNamePath);
-        $spreadsheet->getActiveSheet()->toArray();
+        $spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load($fileName);
 
-        $count = "0";
+        $data = $spreadsheet->getActiveSheet()->toArray();
+
+        $count = 0;
         foreach ($data as $row) {
             if ($count > 0) {
-                echo $start = $row['0'];
-                echo $end = $row['1'];
-                echo $name = $row['2'];
-                echo $place = $row['3'];
-                echo $summary = $row['4'];
 
-                $callendarQuery = "INSERT INTO classes (id,'start','end','name', place, summary) VALUES('$id', '$start','$end','$name', '$summary','$place')";
-                $result = mysqli_query($conn, $callendarQuery);
-                $msg = ture;
+                $start = $row['0'];
+                $end = $row['1'];
+                $num=2;
+
+                $temp_start = str_replace(". ", "-", $start, $num);
+                $temp_end = str_replace(". ", "-", $end, $num);
+
+                echo $start_formatted = str_replace(". ", " ", $temp_start);
+                echo $end_formatted = str_replace(". ", " ", $temp_end);
+
+                $name = $row['2'];
+                $place = $row['3'];
+                $summary = $row['4'];
+
+                $msg = $conn->query("INSERT INTO classes(`start`,`end`,`name`, `summary`,`place`) VALUES( '$start_formatted','$end_formatted','$name', '$summary','$place');");
+
+                //$conn->query("INSERT INTO classes(`start`,`end`,`name`, `summary`,`place`) VALUES( '2023-04-10 14:00:00','2023-04-10 14:00:00','$name', '$summary','$place');");
+
+                //echo $conn->connect_error;
 
             } else {
-                $count = "1";
+                $count = 1;
             }
-
         }
-        if (isset($msg)) {
+
+        if ($msg != false) {
             $_SESSION['message'] = "Sikeres órarend feltöltés!";
-            header('Location: index.php');
+
             exit(0);
         } else {
             $_SESSION['message'] = "Sikertelen órarend feltöltés!";
-            header('Location: index.php');
+
             exit(0);
         }
 
     } else {
         //print "<div class='not'>Rossz file tipus! </div>";
         $_SESSION['message'] = "Rossz fájl formátum!";
-        header('Location: index.php');
+
         exit(0);
     }
 
 
 }
 ?>
+
+<html>
+<h1>KUrva anyád</h1>
+
+</html>

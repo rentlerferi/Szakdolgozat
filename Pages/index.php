@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html>
-<?php
-echo 'PHP version: ' . phpversion();?>
-
 <head>
     <title>United Unies</title>
     <meta charset="UTF-8">
@@ -21,8 +18,6 @@ echo 'PHP version: ' . phpversion();?>
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="../javascript/maps.js"></script>
-    <script src="../javascript/gallery.js"></script>
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -81,13 +76,11 @@ echo 'PHP version: ' . phpversion();?>
             }
             if (isset($_SESSION["id"])) {
                 $id = session_id();
-
                 print
                     '<li><a href="index.php?page=callendar">Órarend</a></li>
         		<li><a href="index.php?page=profile">Profil</a></li>
 				<li><a href="index.php?page=logout">Kilépés</a></li>';
-
-                print('<div class="session">Üdvözlünk:</div>' . $_SESSION["id"]);
+                print('<div class="session">Üdvözlünk: ' . $_SESSION["id"] . '</div>');
             }
             ?>
         </ul>
@@ -157,8 +150,8 @@ echo 'PHP version: ' . phpversion();?>
 
 <script>
     function deleteAccount() {
-        $id = "<?php $_SESSION['id'] ?>";
-        if (confirm("biztos")) {
+        var $id = "<?php echo $_SESSION['id'] ?>";
+        if (confirm("Biztos törölni szeretnéd a fiókod?")) {
             jQuery.ajax({
                 type: "POST",
                 url: "../connections/delete.php",

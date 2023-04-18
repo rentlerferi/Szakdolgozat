@@ -387,7 +387,21 @@ async function initMap() {
     animation: google.maps.Animation.DROP
   });
 
-  //MARKERS-------------------------------------------------------------------
+  //MARKERS for the palces-------------------------------------------------------------------
+
+  var mapOption10 = {
+    center: bBuilding,
+    zoom: 14,
+    mapId: "7a17f3fb28447a5e",
+    draggable: true,
+  }
+  map10 = new google.maps.Map(document.getElementById("map10"), mapOption10);
+
+  const minerv  = new google.maps.Marker({
+    position: bBuilding,
+    map: map10,
+    animation: google.maps.Animation.DROP
+  });
 
 
 
