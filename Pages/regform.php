@@ -22,13 +22,13 @@
                     <label>Vezetéknév</label>
 
                     <input class="input-field" type="text" placeholder="Vezetéknév" name="firstname"
-                        pattern="([A-Z]([a-záéúőóüö.]{1,}\s?)){1,40}" required
+                        pattern="([A-Z]([a-záéúőóüö.]{1,50}\s?)){1,}" required
                         oninvalid="this.setCustomValidity('Vezétéknéknév megadása kötelező')">
 
                     <label>Keresztnév</label>
 
                     <input class="input-field" type="text" placeholder="Kersztnév" name="lastname"
-                        pattern="([A-Z]([a-záéúőóüö.]{1,}\s?)){1,40}" required
+                        pattern="([A-Z]([a-záéúőóüö.]{1,50}\s?)){1,}" required
                         oninvalid="this.setCustomValidity('Keresztnév megadása kötelező')">
 
                     <label>Emailcím:</label>
@@ -53,8 +53,6 @@
                     <input class="input-field" type="password" placeholder="Jelszó megerősítése"
                         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="pswag" pattern="[A-Za-z0-9]{1,20}" required
                         oninvalid="this.setCustomValidity('Jelszó megerősítés megadása kötelező')">
-
-
 
                     <div class="row2">
                         <input type="checkbox" required

@@ -1,5 +1,9 @@
 <?php
+ob_start();
 require '../vendor/autoload.php';
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
@@ -28,13 +32,13 @@ if (isset($_POST['save_callendar'])) {
 
                 $start = $row['0'];
                 $end = $row['1'];
-                $num=2;
+                $num = 2;
 
                 $temp_start = str_replace(". ", "-", $start, $num);
                 $temp_end = str_replace(". ", "-", $end, $num);
 
-                echo $start_formatted = str_replace(". ", " ", $temp_start);
-                echo $end_formatted = str_replace(". ", " ", $temp_end);
+                $start_formatted = str_replace(". ", " ", $temp_start);
+                $end_formatted = str_replace(". ", " ", $temp_end);
 
                 $name = $row['2'];
                 $place = $row['3'];
@@ -43,8 +47,7 @@ if (isset($_POST['save_callendar'])) {
                 $msg = $conn->query("INSERT INTO classes(`start`,`end`,`name`, `summary`,`place`) VALUES( '$start_formatted','$end_formatted','$name', '$summary','$place');");
 
                 //$conn->query("INSERT INTO classes(`start`,`end`,`name`, `summary`,`place`) VALUES( '2023-04-10 14:00:00','2023-04-10 14:00:00','$name', '$summary','$place');");
-
-                //echo $conn->connect_error;
+                echo $conn->connect_error;
 
             } else {
                 $count = 1;
@@ -52,12 +55,10 @@ if (isset($_POST['save_callendar'])) {
         }
 
         if ($msg != false) {
-            $_SESSION['message'] = "Sikeres órarend feltöltés!";
-
-            exit(0);
+            echo "Sikeres órarend feltöltés!";
+            header("Location: index.php?page=callendar");
         } else {
-            $_SESSION['message'] = "Sikertelen órarend feltöltés!";
-
+            echo "Sikertelen órarend feltöltés!";
             exit(0);
         }
 
@@ -70,9 +71,7 @@ if (isset($_POST['save_callendar'])) {
 
 
 }
+header("Location: index.php?page=callendar");
+ob_end_flush();
+exit();
 ?>
-
-<html>
-<h1>KUrva anyád</h1>
-
-</html>

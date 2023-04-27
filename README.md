@@ -23,9 +23,27 @@ A regisztrált felhasználók a Pannon Egyetem diákjai lehetnek, az ő számukr
 
 Vendég felhasználók lehetnek azok a nem egyetemi hallgatók, akik az egyetem különböző rendezvényein részt vesznek (Pl. nyílt napok, versenyek, előadások) Természetesen az ő lehetőségeik korlátozottak. Megtekinthetik az egyetem területén lévő épületeket, valamint a nevezetességeket. 
 
+Követelmények
+ 
+Funkcionális követelmények
+-	Regisztráció
+-	Bejelentkezés
+-	Órarend feltöltése
+-	Épületek keresése
+
+Nem funkcionális követelmények
+-	Folyamatos nyomkövetés
+-	Felhasználó adatainak mentése
+ 
+Összegzés 
+Az utóbbi időben több helymeghatározó applikáció is megjelent a piacon, illetve a social media felületei is biztosítják a barátaink, ismerőseink helyének meghatározását térképen. A mi célunk egy hasonló, helymeghatározó platform készítése kifejezetten a Pannon Egyetem hallgatói (vagy az egyetem által engedélyezett) számára. Az oldal segít a tájékozódásban, a diákok helyének meghatározásában és az órarend megtekintését leegyszerüsíti.
+
 Használt porogramok:
 ----------------------
 - Visual Sutido Code
+- nhely.hu
+- WampServer
+
 
 Használt technológiák:
 ----------------------

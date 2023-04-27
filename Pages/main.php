@@ -38,6 +38,41 @@
 
     <p>A sok kérdezősködés és aggódás helyett mi szeretnénk nektek segíteni, és egy helyre összegyűjteni azokat
         a dolgokat amikre szükségetek lehet az egyetemi pályafutásotok alatt. </p>
+    <h3>Egy kis segítség:</h3>
+    <p>
+        Egy kis további segítség, itt megtalálhatod a karok moodle oldalait továbbé a Pannon Egyetem neptun oldalát:
+    
+    <section class="text-center">
+
+        <!-- neptun -->
+        <a class="btn text-white roundeed-circle " style="background-color: lightblue;" title="Neptun"
+            href="https://neptun-ws01.uni-pannon.hu/hallgato/login.aspx"
+            target="https://neptun-ws01.uni-pannon.hu/hallgato/login.aspx" role="button"><i
+                class="fa-solid fa-book"></i> Neptun</a>
+        <!-- PE neptun -->
+        <a class="btn text-white roundeed-circle " style="background-color: black;" title="Pannon Egyetem Moodle"
+            href="https://moodle.uni-pannon.hu/my/" target="https://moodle.uni-pannon.hu/my/"><i
+                class=""></i> Pe Moodle</a>
+        <!-- MFTK -->
+        <a class="btn text-white roundeed-circle " style="background-color: red;" title="MFTk Moodle"
+            href="https://e-learning.mftk.uni-pannon.hu/login/index.php"
+            target="https://e-learning.mftk.uni-pannon.hu/login/index.php" role="button"><i
+                class=""></i> MFTK Moodle</a>
+        <!-- GTK -->
+        <a class="btn text-white roundeed-circle " style="background-color: #CCCC00;" title="GTK Moodle"
+            href="https://moodle.gtk.uni-pannon.hu/" target="https://moodle.gtk.uni-pannon.hu/" role="button"><i
+                class=""></i> GTK Moodle</a>
+        <!-- Mérnöki kar -->
+        <a class="btn text-white roundeed-circle " style="background-color: maroon;" title="MK Moodle"
+            href="https://moodle2.mk.uni-pannon.hu/" target="https://moodle2.mk.uni-pannon.hu/" role="button"><i
+                class=""></i> MK Moodle</a>
+        <!-- MIK -->
+        <a class="btn text-white roundeed-circle " style="background-color: blue;" title="MIK Moodle"
+            href="https://oktatas.mik.uni-pannon.hu/" target="https://oktatas.mik.uni-pannon.hu/" role="button"><i
+                class=""></i> MIK Moodle</a>
+
+    </section>
+    </p>
     <h2>Kicsit az egyetemről</h2>
     <p>A Pannon Egyetem (röviden: PE) a Közép- és Nyugat-Dunántúli régió meghatározó felsőoktatási intézménye.
         Bölcsészet-, a közgazdaság-, műszaki informatikai-, nevelés-, társadalom- és a természettudományok területén
@@ -75,7 +110,7 @@
         egységek összevonásával új, a korábbinál hatékonyabb szervezet alakult ki. Ekkor jött létre a Tanácsadó,
         Továbbképző és Távoktatási Intézet utódjaként a Felnőttképzési Intézet is, amely a felsőfokú szakképzéseket,
         valamint a felnőttoktatás különböző formáit gondozza.</p>
-    
+
 
 
 </div>
