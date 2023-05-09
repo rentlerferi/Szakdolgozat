@@ -14,6 +14,7 @@
 
 
     <div class="display">
+    
 
     </div>
 
@@ -32,7 +33,7 @@
 
         </div>
         <div class=" second-row">
-            <p></p>
+            
         </div>
 
     </div>

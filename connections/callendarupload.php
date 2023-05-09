@@ -9,7 +9,7 @@ use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
 
-//$id = $_SESSION['id'];
+$id = $_SESSION['id'];
 
 if (isset($_POST['save_callendar'])) {
 
@@ -19,7 +19,7 @@ if (isset($_POST['save_callendar'])) {
 
     if (in_array($file_ext, $allowed_ext)) {
 
-
+        $idExtension = 0;
         $fileName = $_FILES["import_file"]["tmp_name"];
         /** Load $inputFileName to a Spreadsheet object **/
         $spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load($fileName);
@@ -43,11 +43,32 @@ if (isset($_POST['save_callendar'])) {
                 $name = $row['2'];
                 $place = $row['3'];
                 $summary = $row['4'];
+                $id_str = $id . $idExtension;
 
-                $msg = $conn->query("INSERT INTO classes(`start`,`end`,`name`, `summary`,`place`) VALUES( '$start_formatted','$end_formatted','$name', '$summary','$place');");
+                try {
+                    $conn->autocommit(FALSE);
+                    $msg1 = $conn->query("INSERT INTO classes(`id`,`start`,`end`,`name`, `summary`,`place`) VALUES('$id_str', '$start_formatted','$end_formatted','$name', '$summary','$place');");
+                    $msg2 = $conn->query("INSERT INTO taken_classes(`neptun`,`classes_id`) VALUES ('$id','$id_str');");
+                    if ($msg1) {
 
-                //$conn->query("INSERT INTO classes(`start`,`end`,`name`, `summary`,`place`) VALUES( '2023-04-10 14:00:00','2023-04-10 14:00:00','$name', '$summary','$place');");
-                echo $conn->connect_error;
+                        if ($msg2) {
+                            $conn->commit();
+                            $idExtension++;
+                            $msg=true;
+                        } else {
+
+                            throw new Exception($conn->error);
+                        }
+
+                    } else {
+                        throw new Exception($conn->error);
+                    }
+
+                } catch (Exception $ex) {
+                    $conn->rollback();
+                    $conn->autocommit(TRUE);
+                }
+
 
             } else {
                 $count = 1;
@@ -55,23 +76,22 @@ if (isset($_POST['save_callendar'])) {
         }
 
         if ($msg != false) {
-            echo "Sikeres órarend feltöltés!";
-            header("Location: index.php?page=callendar");
+            $_SESSION['message'] ="Sikeres órarend feltöltés!";
+            echo "<script>window.location.href='index.php'</script>";
         } else {
-            echo "Sikertelen órarend feltöltés!";
+            $_SESSION['message'] = "Sikertelen órarend feltöltés!";
             exit(0);
         }
 
     } else {
         //print "<div class='not'>Rossz file tipus! </div>";
         $_SESSION['message'] = "Rossz fájl formátum!";
-
         exit(0);
     }
 
 
 }
-header("Location: index.php?page=callendar");
+echo "<script>window.location.href='index.php'</script>";
 ob_end_flush();
 exit();
 ?>

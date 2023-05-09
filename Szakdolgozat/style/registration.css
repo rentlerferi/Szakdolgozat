@@ -1,0 +1,125 @@
+ /*registration*/
+
+ .regform {
+   width: 100%;
+   height: auto;
+   background-image: url("../Images/registration.jpg");
+   background-position: center;
+   padding: 2%;
+   margin-top: 30px;
+   border-radius: 20px
+ }
+
+ .signup-box {
+   float: top;
+   display: flex;
+   align-items: center;
+   width: 70%;
+   flex: wrap;
+   margin-left: 32.5%;
+ }
+
+ .col-2 {
+   width: 30%;
+   min-width: 300px;
+   flex-basis: 50%;
+   flex-grow: 1;
+   background: #fff;
+   padding: 40px 8%;
+   color: #333;
+   min-height: 250px;
+   opacity: 90%;
+
+ }
+
+ .col-2,
+ h2 {
+   font-weight: 600;
+ }
+
+ .col-2 span {
+   font-size: 12px;
+   padding-top: 2%;
+   margin-left: 2%;
+
+ }
+
+ .col-2 span a {
+   text-decoration: none;
+   color: #ef005d;
+   font-weight: 500;
+   justify-content: center;
+ }
+
+ .google-link {
+   display: flex;
+   width: 60%;
+   justify-content: center;
+   align-items: center;
+   padding: 10px;
+   border-radius: 4px;
+   border: 1px solid #ef005d;
+   text-decoration: none;
+   color: #555;
+   font-size: 13px;
+   margin-top: 10px;
+   margin-left: 20%;
+ }
+
+ .google-link img {
+   width: 50px;
+   margin-right: 10px;
+   margin-left: 0;
+
+ }
+
+ .col-2 h4 {
+   text-align: center;
+   font-weight: 400;
+   margin-bottom: 10px;
+ }
+
+ .input-field {
+   padding: 10px;
+   border-radius: 4px;
+   border: 1px solid #ef005d;
+   outline: none;
+   display: block;
+   width: 80%;
+   margin: 5px 0 10px 10%;
+
+
+ }
+
+ .registration label {
+   font-weight: 500;
+   font-size: 12px;
+   margin-left: 10%;
+ }
+
+ .row2 {
+   display: flex;
+   align-items: center;
+
+ }
+
+ .radius-2 {
+   border-radius: 30px;
+ }
+
+ .row2 input {
+   margin-right: 6px;
+ }
+
+ .col-2 form button {
+   padding: 10px;
+   border-radius: 4px;
+   border: 1px solid #ef005d;
+   outline: none;
+   display: block;
+   width: 100%;
+   margin: 18px 0 10px;
+   background: #ef005d;
+   color: #fff;
+   cursor: pointer;
+ }

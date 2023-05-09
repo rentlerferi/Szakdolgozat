@@ -82,7 +82,8 @@
                 print
                     '<li><a href="index.php?page=callendar">Órarend</a></li>
         		<li><a href="index.php?page=profile">Profil</a></li>
-				<li><a href="index.php?page=logout">Kilépés</a></li>';
+				<li><a 
+                href="index.php?page=logout">Kilépés</a></li>';
                 print('<div class="session">Üdvözlünk: ' . $_SESSION["id"] . '</div>');
             }
             ?>
@@ -151,6 +152,7 @@
     <!-- Copyright -->
 </footer>
 
+
 <script>
     function deleteAccount() {
         var $id = "<?php echo $_SESSION['id'] ?>";
@@ -158,10 +160,20 @@
             jQuery.ajax({
                 type: "POST",
                 url: "../connections/delete.php",
-                data: { id: $id },
-                success: function () {
-                    console.log($id);
-                }
+                data: { id: $id }                
+            });
+        }
+    }
+</script>
+
+<script>
+    function deleteCallendar() {
+        var $id = "<?php echo $_SESSION['id'] ?>";
+        if (confirm("Biztos ki szeretnéd törölni az órarendedet?")) {
+            jQuery.ajax({
+                type: "POST",
+                url: "../connections/deleteCallendar.php",
+                data: { id: $id }                
             });
         }
     }

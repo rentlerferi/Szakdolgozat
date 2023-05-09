@@ -3,8 +3,10 @@
 include "../connections/connection.php";
 
 if (isset($_POST["send"])) {
+
     include_once("../connections/personal.php");
 }
+
 ?>
 
 <head>
@@ -97,13 +99,16 @@ if (isset($_POST["send"])) {
                         pattern="[A-Za-z0-9]{1,20}">
                 </div>
                 <div class="form-group" style="margin-left:15%;">
-
                     <input type="submit" name="send" class="btn btn-success" value="Változtatások mentése">
                     <input type="reset" class="btn btn-info" value="Mégse">
-                    <input type="button" onclick="deleteAccount()" name="delete" class="btn btn-danger"
-                        value="Fiók törlése">
                 </div>
 
+            </form>
+            <form class="form-horizontal" role="form" method="post" action="index.php?page=main">
+                <div class="form-group" style="margin-left:15%;">
+                    <input type="submit" onclick="deleteAccount()" name="delete" class="btn btn-danger"
+                        value="Fiók törlése">
+                </div>
             </form>
         </div>
 

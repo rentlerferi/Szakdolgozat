@@ -397,7 +397,7 @@ async function initMap() {
   }
   map10 = new google.maps.Map(document.getElementById("map10"), mapOption10);
 
-  const minerv  = new google.maps.Marker({
+  const minerv = new google.maps.Marker({
     position: bBuilding,
     map: map10,
     animation: google.maps.Animation.DROP

@@ -4,5 +4,5 @@
 	$_SESSION = array();
 	mysqli_close($conn);
 	//header("location:?page=main");
-	echo "<script>window.location.href='index.php'</script>"
+	echo "<script>window.location.href='index.php'</script>";
 ?>

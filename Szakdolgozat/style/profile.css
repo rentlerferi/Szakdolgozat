@@ -1,0 +1,62 @@
+.changeform {
+    width: 100%;
+    height: auto;
+    background-image: url("../Images/registration.jpg");
+    background-position: center;
+    padding: 2%;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.profile {
+    width: 80%;
+    background-color: white;
+    opacity: 90%;
+    margin-left: 10%;
+    border-radius: 30px;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    min-width: 650px;
+    display: flex;
+    flex: wrap;
+    flex-basis: 50;
+
+}
+
+.form-horizontal label {
+    margin-left: 10%;
+}
+
+.btn btn-primary {
+    padding: 10px;
+    border-radius: 4px;
+    outline: none;
+    display: block;
+    margin: 18px 0 10px;
+    color: #fff;
+    cursor: pointer;
+    height: auto;
+
+}
+
+.editinfo {
+    width: 40%;
+    margin-left: 5%;
+    align-items: center;
+}
+
+.informationlisting {
+    width: 40%;
+    margin-left: 2%;
+    padding: 3%;
+}
+
+.col-md-9 {
+    align-items: center;
+    padding: 5px;
+}
+
+.profile label {
+    font-weight: 500;
+    font-size: 12px;
+}
